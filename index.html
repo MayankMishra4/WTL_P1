@@ -3,12 +3,128 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daily News</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            background-color: #1e90ff;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        .news {
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        article {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        article h2 {
+            margin-top: 0;
+        }
+        
+        .date {
+            font-size: 0.9em;
+            color: gray;
+        }
+        
+        article a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        article a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nihil fugit earum laborum praesentium adipisci reiciendis minus quisquam unde accusamus?</p>
+
+    <header>
+        <h1>Daily News</h1>
+        <p>Your source for daily updates</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Technology</a>
+        <a href="#">Sports</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section class="news">
+            <article>
+                <h2>Breaking News Headline</h2>
+                <p class="date">January 19, 2026</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article>
+                <h2>Technology Update</h2>
+                <p class="date">January 19, 2026</p>
+                <p>New advancements in technology are shaping the future.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article>
+                <h2>Sports Highlights</h2>
+                <p class="date">January 19, 2026</p>
+                <p>Latest sports news and match highlights.</p>
+                <a href="#">Read more</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Daily News | All Rights Reserved</p>
+    </footer>
+
 </body>
 
 </html>
